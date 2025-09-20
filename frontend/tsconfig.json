@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* === Output & Module System === */
+    "target": "ES2020",                    // Modern JS output
+    "module": "ESNext",                    // ES modules
+    "moduleResolution": "Node",            // How modules are resolved
+    "jsx": "react-jsx",                    // Enables JSX in .tsx files (React 17+)
+
+    /* === Type Checking === */
+    "strict": true,                        // Enable all strict checks
+    "noImplicitAny": true,                 // Disallow `any` unless you explicitly use it
+    "strictNullChecks": true,              // Catch null/undefined errors
+    "forceConsistentCasingInFileNames": true,
+
+    /* === Import/Export Handling === */
+    "esModuleInterop": true,               // Allow `import x from "..."` for CommonJS modules
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,             // Allow importing .json files
+    "isolatedModules": true,               // Required by many bundlers
+
+    /* === Output Locations === */
+    "outDir": "dist",
+    "rootDir": "src",
+
+    /* === Project Behavior === */
+    "skipLibCheck": true                   // Speeds up builds (optional)
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
